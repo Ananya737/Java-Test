@@ -8,12 +8,10 @@ class Two extends One
 {
     
 }
-
-
-public class Inheritance {
+public class Inheritance extends Two{
     public static void main(String args[]){
 
-        Two obj=new Two();
+        Inheritance obj=new Inheritance();
         obj.display();
     }
     
