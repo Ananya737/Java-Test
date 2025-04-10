@@ -84,6 +84,7 @@
 
 // Deep copy : Allocates new memory to the object.
 
+
 class One{
     int arr[];
     One(int arr[]){
@@ -105,14 +106,14 @@ class One{
 
 public class Constructor{
     public static void main(String args[]){
-        int arr[]={3,6,9};
+        int arr[]={1,2,3};
         One obj=new One(arr);
         One obj1=new One(obj);
       
         obj.display();
         obj1.display();
 
-        obj.arr[0]=2;
+        obj.arr[0]=9;
 
         obj.display();
         obj1.display();
