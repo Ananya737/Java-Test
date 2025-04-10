@@ -28,33 +28,70 @@
 
 
 
-class One{
-   void show(){
-    System.out.println("hello");
-   }
+// class One{
+//    void show(){
+//     System.out.println("hello");
+//    }
     
+// }
+// class Two extends One
+// {
+//     void show(){
+//         System.out.println("Method overridden!");
+//     }
+
+// }
+
+// public class Polymorphism {
+//     public static void main(String args[]){
+//     One obj=new Two();
+//     obj.show();
+
+//     One obj1=new One();
+//     obj1.show();
+
+
+//     }
+    
+// }
+
+
+
+
+
+
+//Object polymorphism:
+
+class One{
+    void show(){
+        System.out.println("Parent class method!");
+    }
 }
+
 class Two extends One
 {
     void show(){
-        System.out.println("Method overridden!");
+        System.out.println("child class method!");
     }
 
 }
 
-public class Polymorphism {
+class Three extends Two{
+    void show(){
+        System.out.println("Second child class method!");
+
+    }
+}
+
+public class Polymorphism{
     public static void main(String args[]){
-    One obj=new Two();
-    obj.show();
 
-    One obj1=new One();
-    obj1.show();
+        One obj;
+        obj=new Three();
+        obj.show();
 
+        
 
     }
-    
+
 }
-
-
-
-
