@@ -70,8 +70,11 @@ class One{
 
 class Two extends One
 {
+    int a;
     void show(){
         System.out.println("child class method!");
+        System.out.println(a);
+        
     }
 
 }
@@ -89,9 +92,7 @@ public class Polymorphism{
         One obj;
         obj=new Three();
         obj.show();
-
         
-
     }
 
 }
