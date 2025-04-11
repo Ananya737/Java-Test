@@ -18,6 +18,9 @@ public class Encapsulation {
         One obj=new One();
         obj.setName("Ananya");
         obj.getName();
+
+
+        // obj.name="Ananya";  (Not allowed because name is private);
     }
     
 }
